@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header section starts -->
+
+    <header>
+        <a href="#" class="logo">LOGO</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#vendor">vendor</a>
+            <a href="#clients">clients</a>
+            <a href="#team">team</a>
+            <a href="#contact">contact</a>
+            <a href="#blog">blog</a>
+        </nav>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <span>wedding planner agency</span>
+            <h3>we make every moment special!</h3>
+            <a href="#" class="btn">learn more</a>
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <section class="step-container">
+        <div class="step">
+            <span>01</span>
+            <h3>engagement</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Soluta, pariatur sapiente molestiae facilis fuga et at, quisquam quo eligendi 
+                nam voluptatibus voluptas modi temporibus minus. Dicta animi veniam doloremque a!</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+        <div class="step">
+            <span>02</span>
+            <h3>save the date</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Soluta, pariatur sapiente molestiae facilis fuga et at, quisquam quo eligendi 
+                nam voluptatibus voluptas modi temporibus minus. Dicta animi veniam doloremque a!</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+        <div class="step">
+            <span>03</span>
+            <h3>wedding ceremony</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Soluta, pariatur sapiente molestiae facilis fuga et at, quisquam quo eligendi 
+                nam voluptatibus voluptas modi temporibus minus. Dicta animi veniam doloremque a!</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </section>
+
+    <script>
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('nav-toggle');
+        });
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('nav-toggle');
+        }
+    </script>
+    
+</body>
+</html>
